@@ -4,8 +4,4 @@
 
 #pragma once
 
-enum class classicIntegralMode {
-    left,
-    right,
-    center
-};
+#define csv_separator ';'
