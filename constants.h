@@ -5,3 +5,4 @@
 #pragma once
 
 #define csv_separator ';'
+#define epsilon = 0.0000001

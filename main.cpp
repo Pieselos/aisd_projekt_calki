@@ -15,7 +15,9 @@ int main() {
     out << fixed << setprecision(6);
     double integral = 0;
     auto t0 = chrono::high_resolution_clock::now();
-    integral = classicIntegral(&funExp, 0, 5, 100, 0, "exp.csv");
+    // integral = classicIntegral(&funSin, 0, 5, 15, 1, "sin.csv");
+    integral = trapezeIntegral(funSin,1,6,15,"trapezy.csv");
+    cout << integral << endl;
     auto t1 = chrono::high_resolution_clock::now();
     chrono::duration<double> dt = t1 - t0;
     // out << "classicIntegralLeft" << csv_separator << 100 << csv_separator << dt.count() << endl;
