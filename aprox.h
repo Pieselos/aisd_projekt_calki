@@ -11,3 +11,4 @@ double classicIntegral(double (*fun)(double), double a, double b, int n, int mod
 double trapezeIntegral(double (*fun)(double), double a, double b, int n, std::string filename);
 double montecarloIntegral(double (*fun)(double), double a, double b, int n, std::string filename);
 std::array <double, 2> funMaxMin(double (*fun)(double), double a, double b);
+double montecarloSobolIntegral(double (*fun)(double), double a, double b, int n, std::string filename);
